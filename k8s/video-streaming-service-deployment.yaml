@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: video-streaming-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: video-streaming-service
+  template:
+    metadata:
+      labels:
+        app: video-streaming-service
+    spec:
+      containers:
+      - name: video-streaming-service
+        image: your-docker-username/video-streaming-service:latest
+        ports:
+        - containerPort: 50051

@@ -1,0 +1,26 @@
+version: '3'
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - 50051:50051
+  user-management-service:
+    build: ./user-management-service
+    ports:
+      - 50052:50052
+  video-streaming-service:
+    build: ./video-streaming-service
+    ports:
+      - 50053:50053
+  video-upload-service:
+    build: ./video-upload-service
+    ports:
+      - 50054:50054
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+  kafka:
+    image: confluentinc/cp-kafka
+    ports:
+      - 9092:9092
