@@ -1,6 +1,6 @@
 # Plataforma de Streaming de Vídeo - Microserviços
 
-Codificação em Golango usando gRPC para implementação que consiste em vários microserviços que juntos formam uma plataforma de streaming de vídeo. Os microserviços são implementados em Go, utilizam MongoDB para armazenamento de dados, Kafka para streaming de eventos e se comunicam via gRPC.
+Codificação em Golang usando gRPC para implementação que consiste em vários microserviços que juntos formam uma plataforma de streaming de vídeo. Os microserviços são implementados em Go, utilizam MongoDB para armazenamento de dados, Kafka para streaming de eventos e se comunicam via gRPC.
 
 ## Microserviços
 
